@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+</head>
+<style>
+    h2{
+        text-align: center;
+        background-color: antiquewhite;
+    }
+    *{
+        box-sizing: border-box ;
+    }
+    input [type=text],textarea{
+        width: 100%;
+        padding: 6px;
+        border-radius: 4px;
+        resize: vertical;
+    }
+    label{
+        padding: 4px 4px 14px 0;
+        display: inline-block;
+    }
+    
+    .contain{
+        border-radius: 5px;
+        background-color: #b0c4cf;
+        padding: 20px;
+    }
+    
+    @media screen and (max-width: 600px) {
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    }
+</style>
+<body>
+    <h2>FORMULIR PENDAFTARAN</h2>
+    <div class="contain">
+        <form action="#">
+            <div class="row">
+                <label for="name" >Name</label>
+                <input type="text" placeholder="masukan nama">           
+            </div>
+            <div >
+                <label for="email" >Email</label>
+                <input type="text"  placeholder="masukan email">
+            </div>
+            <div >
+                <label for="Pasword">Pasword</label>
+                <input type="password"  placeholder="masukan pasword">
+            </div>
+            <div >
+                <label for="gender" >Gender</label><br>
+                <input type="radio" name="gender" value="laki-laki">laki-laki
+                <input type="radio" name="gender" value="Perempuan">Perempuan
+            </div>
+            <div >
+                <label for="Alamat">Alamat</label> <br>
+                <textarea name="Alamat"  cols="30" rows="10" placeholder="Masukan Alamat Anda"></textarea>
+            </div>
+            <div >
+                <label for="photo">Masukan Photo</label>
+                <input type="file" name="Photo" value="Photo" accept="image/*">
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+              </div>
+        </form>
+    </div>
+</body>
+</html>
